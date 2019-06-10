@@ -1,0 +1,2 @@
+module RedHelper
+end

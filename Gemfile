@@ -33,6 +33,25 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#jquery
+#gem 'jquery', '~> 0.0.1'
+
+#JQuery JS
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+
+#Bootstrap CSS
+#gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+
+#bootstrap rails
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+#gem 'bootstrap-sass', '~> 3.4.1'
+
+#sass required for bootstrap sass
+gem 'sassc-rails', '>= 2.1.0'
+
+#CHART.js graphics
+gem 'chartjs-ror', '~> 3.6', '>= 3.6.4'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

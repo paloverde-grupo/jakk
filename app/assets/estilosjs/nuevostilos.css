@@ -1,0 +1,827 @@
+/* inicio estilos menu */
+#menu {
+    background-color: #18355d;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0;
+}
+
+.text_menu{
+    display: none;
+} 
+
+#menu_burger1{
+    display: none;
+}
+
+#menu_burger1 img {
+    width: 35px;
+}
+
+#menu_burger2{
+    display: none;   
+}
+
+#menu_burger2 img{
+    width: 25px;   
+}
+#logo_menu {
+    text-align: center;
+}
+
+#logo_menu a {
+    text-decoration: none;
+}
+
+#logo_menu a img {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#opciones_menu {
+    list-style:none;
+    padding: 0px;
+}
+
+#opciones_menu .opcion_menu {
+    padding: 15px 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#loggout {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+#loggout p {
+    text-align: center;
+}
+
+#opciones_menu .opcion_menu:hover {
+    background-color: #ffffff;
+    color: #18355d;
+}
+
+.subopciones_menu {
+    list-style:none;
+    padding: 0px;
+    position: absolute;
+    background-color: #18355d;
+    z-index: 7;
+    width: 200px;
+}
+
+.subopciones_menu .subopcion_menu {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.subopciones_menu .subopcion_menu a {
+    text-decoration: none;
+    width: 150px;
+    background-color: #18355d;
+    color: #ffffff;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+}
+
+.subopciones_menu .subopcion_menu a:hover {
+    color: #18355d;
+    background-color: #e5e5e5;
+}
+
+#opciones_menu .opcion_menu:hover .subopciones_menu .subopcion_menu{
+    background-color: #18355d;
+    color: #ffffff;
+    text-align: initial;
+}
+
+.opcion_menu .icon_menu .icono_menu {
+    width: 35px;
+}
+
+.icon_submenu .icono_submenu{
+    width: 30px;
+}
+
+.icon_menu, .icon_submenu {
+    margin-right: 10px;
+}
+/* fin estilos menu */
+
+/* inicio estilos genericos */
+#pantalla{
+    /* width: 79%; */
+    background-color: #ffffff;
+    /* display: inline-block; */
+}
+
+.principal{
+    overflow: auto;
+}
+
+.icon1{
+    /* width: 84%;
+    margin: 5px 0px; */
+    width: 25px;
+}
+
+.icon2 {
+    width: 70px;
+}
+
+#encabezado_pantalla{
+    position: fixed;
+    width: 90%;
+    background-color: #ffffff;
+    z-index: 6;
+}
+
+.contenedor_principal{
+    margin-top: 90px;
+}
+
+#titulo_pantalla{
+    width: 35%;
+    display: inline-block;
+}
+
+#opciones_pantalla{
+    width: 64%;
+    display: inline-block;
+    text-align: right;
+}
+.opcion_pantalla{
+    margin: 7px;
+}
+
+#opciones_pantalla #busqueda_pantalla{
+    width: 50%;
+    display: inline-block;
+}
+
+#opciones_pantalla #busqueda_pantalla #texto_busqueda input{
+    border: 1px solid #000000;
+    border-radius: 6px;
+    height: 30px;
+    background-color: lightgray;
+}
+
+#opciones_pantalla #busqueda_pantalla #texto_busqueda, #opciones_pantalla #busqueda_pantalla #icono_busqueda{
+    display: inline-block;
+}
+
+#opciones_pantalla #mensajero_pantalla{
+    display: inline-block;
+}
+
+#opciones_pantalla #campana_pantalla{
+    display: inline-block;
+}
+
+#opciones_pantalla #usuario_pantalla{
+    display: inline-block;
+}
+
+.icon4{
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* fin estilos genericos */
+
+/*inicio estilos modal*/
+/* .telon_modal{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_modal{
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+
+} */
+.icon_modal{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #337ab7;
+    background-color: #ffffff;
+    position: relative;
+    float: right;
+    height: 30px;
+    width: 30px;
+    top: -10px;
+    display: none;
+}
+
+.icon_modal:hover{
+    color: #ffffff;
+    background-color: #337ab7;
+}
+
+.product:hover .icon_modal{
+    display: block;
+}
+
+.product:hover .image_modal{
+    width: 27%;
+}
+
+.image_modal{
+    margin: 0 auto;
+    width: 25%;
+}
+
+/*fin estilos modal*/
+
+/* inicio estilos dashboard */
+#menu{
+    height: 662px;
+    width: 106px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 7;
+    text-align: center;
+}
+
+#descripciones_economicas .descipcion_economica{
+    width: 22%;
+    display: inline-block;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.color_verde{
+    background-color: #75d6a6;
+}
+
+.color_azul{
+    background-color: #42a5f5;
+}
+
+.color_amarillo{
+    background-color: #ffcc66;
+}
+
+.graficas_dashboard{
+    padding-top: 35px;
+}
+
+.cantidad_texto {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.texto_economica {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#grafica_ganancias{
+    display: inline-block;
+}
+
+#grafica_semanal{
+    display: inline-block;
+}
+
+.titulos_graficas{
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cuerpo_graficas{
+    border: 1px solid #42a5f5;
+    padding: 30px;
+}
+
+.cuerpo_graficas canvas{
+    margin: 10px;
+
+}
+
+#graficasemanal {
+    margin: 57px 0;
+}
+
+.titulos_graficas p{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.informacion_economica{
+    margin: 10px 0px;
+}
+
+.cantidad_texto p, .texto_economica p{
+    margin: 0;
+}
+
+.icon3{
+    width: 84%;
+    margin: 5px 0px;
+}
+
+.icon_descripcion{
+    padding: 0;
+}
+
+
+/* fin estilos dashboard */
+
+/* inicio estilos componente2 */
+#botones_edocuenta{
+    text-align: center;
+}
+
+.btn_edocuenta{
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align:center;
+    width: 200px;
+
+}
+
+#estado_cuenta{
+    padding-top: 50px;
+}
+
+.contenedor_graficaedocuenta{
+    width: 100%;
+    text-align: center;
+}
+
+#contact-form1{
+    width: 100%;
+}
+/* #grafica_edocuenta{
+    width: 35%;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+} */
+
+/* #tabla_edocuenta{
+    width: 60%;
+    display: inline-block;
+} */
+
+#tabla_edocuenta {
+    padding: 50px 0px;
+}
+
+#tabla_secundaria{
+    padding: 50px 0px;
+}
+
+#filtros_histcuenta{
+    width: 30%;
+    padding: 20px;
+}
+
+#tabla_edocuenta table thead th {
+    background-color: #42a5f5;
+    color: #ffffff;
+}
+
+
+
+/* fin estilos componente2 */
+
+/* inicio estilos componente3 */
+
+#botones_billetera{
+    text-align: center;
+}
+
+.btn_edocuenta{
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align:center;
+    width: 200px;
+
+}
+
+#descripcion_billetera{
+    padding-top: 40px;
+    /* text-align: center; */
+}
+
+#pedir_dinero{
+    text-align: initial;
+}
+
+#historial_pedir_dinero .contenedor_inputs label{
+    float: left;
+}
+
+.contenedor_inputs{
+    width: 25%;
+    margin: 15px 10px;
+    display: inline-block;
+}
+
+.contenedor_inputs input{
+    width: 100%;
+}
+
+.separacion{
+    margin: 15px 0;
+}
+
+#datos_bancarios .col-sm-6 .opcion_datosbancarios p{
+    text-align: left;
+}
+
+#filtros_historialbilletera{
+    width: 30%;
+    padding: 20px;
+}
+
+/* fin estilos componente3 */
+
+/* inicio estilos componente4 */
+    /*inicio estilos carrito*/
+.items_carrito{
+    width: 50%;
+    padding: 20px;
+}
+
+.btnitems_carrito{
+    position: absolute;
+    top: 95px;
+    right: 0;
+    width: 100%;
+}
+
+.imgitem_carrito{
+    width: 50%;
+}
+
+    /*fin estilos carrito*/
+.descripcion_producto{
+    padding: 10px;
+    border: 1px solid #eeb927;
+    border-radius: 25px;
+    margin: 20px 0;
+    height: 390px;
+}
+
+.descripcion_producto .logo_producto{
+    text-align: center;
+}
+
+.descripcion_producto .logo_producto img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.titulo_producto{
+    text-align: center;
+}
+
+.datos_producto{
+    text-align: center;
+}
+
+.datos_producto textarea{
+    text-align: center;
+}
+
+.datos_producto p {
+    height: 20px;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.meses_inversion, .porcentaje_inversion{
+    text-align: right;
+}
+
+.costo_inversion{
+    text-align: center;
+}
+
+.btn_carrito{
+    text-align: center;
+}
+
+.btn_carrito a{
+    border-radius: 34px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 13px 5px;
+}
+
+.icon_compra{
+    width: 25px;
+}
+/* fin estilos componente4 */
+
+/* inicio estilos componente5*/
+.botones_red{
+    text-align: center;
+}
+
+.btn_red{
+    margin: 10px;
+}
+/*prueba*/
+                            	/*Now the CSS*/
+                            	* {
+                            		margin: 0;
+                            		padding: 0;
+                            	}
+
+                            	.nombre {
+                            		background: rgba(255, 255, 255, .3);
+                            		width: 100px;
+                            		margin-top: -5px;
+                            		margin-left: -11px;
+                            	}
+
+                            	.todo {
+                            		font-size: 11px;
+                            		width: 100%;
+                            		background: rgba(0, 0, 0, .5);
+                            		margin-top: -4px;
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.todo1 {
+                            		font-size: 11px;
+                            		width: 100%;
+                            		background: rgba(70, 120, 250, .8);
+                            		margin-top: -4px;
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.todo:hover {
+                            		font-size: 11px;
+                            		text-decoration: underline;
+                            		width: 100%;
+                            		margin-top: -4px;
+                            		background: rgba(0, 0, 0, .7);
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.todo1:hover {
+                            		font-size: 11px;
+                            		text-decoration: underline;
+                            		width: 100%;
+                            		margin-top: -4px;
+                            		background: rgba(70, 120, 250, 1);
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.tree1 ul {
+                            		padding-top: 20px;
+                            		position: relative;
+                            		transition: all 0.5s;
+                            		-webkit-transition: all 0.5s;
+                            		-moz-transition: all 0.5s;
+                            	}
+
+                            	.tree1 li {
+                            		float: left;
+                            		text-align: center;
+                            		list-style-type: none;
+                            		position: relative;
+                            		padding: 20px 5px 0 5px;
+                            		transition: all 0.5s;
+                            		-webkit-transition: all 0.5s;
+                            		-moz-transition: all 0.5s;
+                            	}
+
+                            	/*We will use ::before and ::after to draw the connectors*/
+                            	.tree1 li::before, .tree1 li::after {
+                            		content: '';
+                            		position: absolute;
+                            		top: 0;
+                            		right: 50%;
+                            		border-top: 3px solid #ccc;
+                            		width: 50%;
+                            		height: 20px;
+                            	}
+
+                            	.tree1 li::after {
+                            		right: auto;
+                            		left: 50%;
+                            		border-left: 3px solid #ccc;
+                            	}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree1 li:only-child::after, .tree1 li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree1 li:only-child {
+	padding-top: 0;
+}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree1 li:first-child::before, .tree1 li:last-child::after {
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree1 li:last-child::before {
+	border-right: 3px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+
+.tree1 li:first-child::after {
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree1 ul ul::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-left: 3px solid #ccc;
+	width: 0;
+	height: 20px;
+}
+
+.tree1 li a {
+	height: 100px;
+	width: 100px;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+	display: inline-block;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree1 li a:hover, .tree1 li a:hover+ul li a {
+	background: #c8e4f8;
+	color: #000;
+	border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree1 li a:hover+ul li::after, .tree1 li a:hover+ul li::before, .tree1 li a:hover+ul::before,
+.tree1 li a:hover+ul ul::before {
+	border-color: #94a0b4;
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+/*fin prueba*/
+/* fin estilos componente5*/
+
+@media (max-width: 1020px) {
+    #descripciones_economicas{
+        text-align: center;
+    }
+
+    #descripciones_economicas .descipcion_economica{
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #grafica_ganancias, #grafica_semanal{
+        margin: 20px 0;
+        margin-left: 20px;
+    }
+
+    .icon3 {
+        width: 45%;
+        margin: 5px 0px;
+    }
+
+    .contenedor_graficaedocuenta{
+        width: 60%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    #tabla_histbilletera{
+        padding-left: 40px;
+    }
+
+    .descripcion_producto .logo_producto img {
+        width: 30%;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+
+    /* #descripciones_economicas .descipcion_economica{
+        width: %;
+    } */
+
+    /* .icon3 {
+        width: 25%;
+        margin: 5px 0px;
+    } */
+
+    #opciones_pantalla {
+        width: 100%;
+    }
+
+    #titulo_pantalla {
+        display: none;
+    }
+    
+    #titulo_pantalla{
+        display: none;
+    }
+
+    #menu_burger1{
+        display: inline-block;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    #grafica_ganancias, #grafica_semanal {
+        margin: 20px 0;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #expande_menu{
+        display: none;
+    }
+
+    #menu_burger2{
+        display: block;
+        width: 18%;
+    }
+
+    .descripcion_producto {
+        width: 60%;
+        margin: 30px auto;
+    }
+
+
+
+}
+
+@media (max-width: 596px) {
+    #descripciones_economicas .descipcion_economica {
+        width: 98%;
+    }
+
+    .informacion_economica {
+        margin: 30px 0px;
+    }
+    
+}
+
+@media (max-width: 540px) {
+    
+    .contenedor_principal{
+        margin-top: 100px;
+    }
+    
+}
+
+
+

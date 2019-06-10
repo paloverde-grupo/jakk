@@ -1,0 +1,1776 @@
+
+
+<style>
+/* inicio estilos menu */
+#menu {
+    background-color: #18355d;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0;
+}
+
+.text_menu{
+    display: none;
+} 
+
+#menu_burger1{
+    display: none;
+}
+
+#menu_burger1 img {
+    width: 35px;
+}
+
+#menu_burger2{
+    display: none;   
+}
+
+#menu_burger2 img{
+    width: 25px;   
+}
+#logo_menu {
+    text-align: center;
+}
+
+#logo_menu a {
+    text-decoration: none;
+}
+
+#logo_menu a img {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#opciones_menu {
+    list-style:none;
+    padding: 0px;
+}
+
+#opciones_menu .opcion_menu {
+    padding: 15px 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#loggout {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+#loggout p {
+    text-align: center;
+}
+
+#opciones_menu .opcion_menu:hover {
+    background-color: #ffffff;
+    color: #18355d;
+}
+
+.subopciones_menu {
+    list-style:none;
+    padding: 0px;
+    position: absolute;
+    background-color: #18355d;
+    z-index: 7;
+    width: 200px;
+}
+
+.subopciones_menu .subopcion_menu {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.subopciones_menu .subopcion_menu a {
+    text-decoration: none;
+    width: 150px;
+    background-color: #18355d;
+    color: #ffffff;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+}
+
+.subopciones_menu .subopcion_menu a:hover {
+    color: #18355d;
+    background-color: #e5e5e5;
+}
+
+#opciones_menu .opcion_menu:hover .subopciones_menu .subopcion_menu{
+    background-color: #18355d;
+    color: #ffffff;
+    text-align: initial;
+}
+
+.opcion_menu .icon_menu .icono_menu {
+    width: 35px;
+}
+
+.icon_submenu .icono_submenu{
+    width: 30px;
+}
+
+.icon_menu, .icon_submenu {
+    margin-right: 10px;
+}
+/* fin estilos menu */
+
+/* inicio estilos genericos */
+#pantalla{
+    /* width: 79%; */
+    background-color: #ffffff;
+    /* display: inline-block; */
+}
+
+.principal{
+    overflow: auto;
+}
+
+.icon1{
+    /* width: 84%;
+    margin: 5px 0px; */
+    width: 25px;
+}
+
+.icon2 {
+    width: 70px;
+}
+
+#encabezado_pantalla{
+    position: fixed;
+    width: 90%;
+    background-color: #ffffff;
+    z-index: 6;
+}
+
+.contenedor_principal{
+    margin-top: 90px;
+}
+
+#titulo_pantalla{
+    width: 35%;
+    display: inline-block;
+}
+
+#opciones_pantalla{
+    width: 64%;
+    display: inline-block;
+    text-align: right;
+}
+.opcion_pantalla{
+    margin: 7px;
+}
+
+#opciones_pantalla #busqueda_pantalla{
+    width: 50%;
+    display: inline-block;
+}
+
+#opciones_pantalla #busqueda_pantalla #texto_busqueda input{
+    border: 1px solid #000000;
+    border-radius: 6px;
+    height: 30px;
+    background-color: lightgray;
+}
+
+#opciones_pantalla #busqueda_pantalla #texto_busqueda, #opciones_pantalla #busqueda_pantalla #icono_busqueda{
+    display: inline-block;
+}
+
+#opciones_pantalla #mensajero_pantalla{
+    display: inline-block;
+}
+
+#opciones_pantalla #campana_pantalla{
+    display: inline-block;
+}
+
+#opciones_pantalla #usuario_pantalla{
+    display: inline-block;
+}
+
+.icon4{
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* fin estilos genericos */
+
+/*inicio estilos modal*/
+/* .telon_modal{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_modal{
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+
+} */
+.icon_modal{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #337ab7;
+    background-color: #ffffff;
+    position: relative;
+    float: right;
+    height: 30px;
+    width: 30px;
+    top: -10px;
+    display: none;
+}
+
+.icon_modal:hover{
+    color: #ffffff;
+    background-color: #337ab7;
+}
+
+.product:hover .icon_modal{
+    display: block;
+}
+
+.product:hover .image_modal{
+    width: 27%;
+}
+
+.image_modal{
+    margin: 0 auto;
+    width: 25%;
+}
+
+/*fin estilos modal*/
+
+/* inicio estilos dashboard */
+#menu{
+    height: 662px;
+    width: 106px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 7;
+    text-align: center;
+}
+
+#descripciones_economicas .descipcion_economica{
+    width: 22%;
+    display: inline-block;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.color_verde{
+    background-color: #75d6a6;
+}
+
+.color_azul{
+    background-color: #42a5f5;
+}
+
+.color_amarillo{
+    background-color: #ffcc66;
+}
+
+.graficas_dashboard{
+    padding-top: 35px;
+}
+
+.cantidad_texto {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.texto_economica {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#grafica_ganancias{
+    display: inline-block;
+}
+
+#grafica_semanal{
+    display: inline-block;
+}
+
+.titulos_graficas{
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cuerpo_graficas{
+    border: 1px solid #42a5f5;
+    padding: 30px;
+}
+
+.cuerpo_graficas canvas{
+    margin: 10px;
+
+}
+
+#graficasemanal {
+    margin: 57px 0;
+}
+
+.titulos_graficas p{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.informacion_economica{
+    margin: 10px 0px;
+}
+
+.cantidad_texto p, .texto_economica p{
+    margin: 0;
+}
+
+.icon3{
+    width: 84%;
+    margin: 5px 0px;
+}
+
+.icon_descripcion{
+    padding: 0;
+}
+
+
+/* fin estilos dashboard */
+
+/* inicio estilos componente2 */
+#botones_edocuenta{
+    text-align: center;
+}
+
+.btn_edocuenta{
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align:center;
+    width: 200px;
+
+}
+
+#estado_cuenta{
+    padding-top: 50px;
+}
+
+.contenedor_graficaedocuenta{
+    width: 100%;
+    text-align: center;
+}
+
+#contact-form1{
+    width: 100%;
+}
+/* #grafica_edocuenta{
+    width: 35%;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+} */
+
+/* #tabla_edocuenta{
+    width: 60%;
+    display: inline-block;
+} */
+
+#tabla_edocuenta {
+    padding: 50px 0px;
+}
+
+#tabla_secundaria{
+    padding: 50px 0px;
+}
+
+#filtros_histcuenta{
+    width: 30%;
+    padding: 20px;
+}
+
+#tabla_edocuenta table thead th {
+    background-color: #42a5f5;
+    color: #ffffff;
+}
+
+
+
+/* fin estilos componente2 */
+
+/* inicio estilos componente3 */
+
+#botones_billetera{
+    text-align: center;
+}
+
+.btn_edocuenta{
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align:center;
+    width: 200px;
+
+}
+
+#descripcion_billetera{
+    padding-top: 40px;
+    /* text-align: center; */
+}
+
+#pedir_dinero{
+    text-align: initial;
+}
+
+#historial_pedir_dinero .contenedor_inputs label{
+    float: left;
+}
+
+.contenedor_inputs{
+    width: 25%;
+    margin: 15px 10px;
+    display: inline-block;
+}
+
+.contenedor_inputs input{
+    width: 100%;
+}
+
+.separacion{
+    margin: 15px 0;
+}
+
+#datos_bancarios .col-sm-6 .opcion_datosbancarios p{
+    text-align: left;
+}
+
+#filtros_historialbilletera{
+    width: 30%;
+    padding: 20px;
+}
+
+/* fin estilos componente3 */
+
+/* inicio estilos componente4 */
+    /*inicio estilos carrito*/
+.items_carrito{
+    width: 50%;
+    padding: 20px;
+}
+
+.btnitems_carrito{
+    position: absolute;
+    top: 95px;
+    right: 0;
+    width: 100%;
+}
+
+.imgitem_carrito{
+    width: 50%;
+}
+
+    /*fin estilos carrito*/
+.descripcion_producto{
+    padding: 10px;
+    border: 1px solid #eeb927;
+    border-radius: 25px;
+    margin: 20px 0;
+    height: 390px;
+}
+
+.descripcion_producto .logo_producto{
+    text-align: center;
+}
+
+.descripcion_producto .logo_producto img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.titulo_producto{
+    text-align: center;
+}
+
+.datos_producto{
+    text-align: center;
+}
+
+.datos_producto textarea{
+    text-align: center;
+}
+
+.datos_producto p {
+    height: 20px;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.meses_inversion, .porcentaje_inversion{
+    text-align: right;
+}
+
+.costo_inversion{
+    text-align: center;
+}
+
+.btn_carrito{
+    text-align: center;
+}
+
+.btn_carrito a{
+    border-radius: 34px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 13px 5px;
+}
+
+.icon_compra{
+    width: 25px;
+}
+/* fin estilos componente4 */
+
+/* inicio estilos componente5*/
+.botones_red{
+    text-align: center;
+}
+
+.btn_red{
+    margin: 10px;
+}
+/*prueba*/
+                            	/*Now the CSS*/
+                            	* {
+                            		margin: 0;
+                            		padding: 0;
+                            	}
+
+                            	.nombre {
+                            		background: rgba(255, 255, 255, .3);
+                            		width: 100px;
+                            		margin-top: -5px;
+                            		margin-left: -11px;
+                            	}
+
+                            	.todo {
+                            		font-size: 11px;
+                            		width: 100%;
+                            		background: rgba(0, 0, 0, .5);
+                            		margin-top: -4px;
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.todo1 {
+                            		font-size: 11px;
+                            		width: 100%;
+                            		background: rgba(70, 120, 250, .8);
+                            		margin-top: -4px;
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.todo:hover {
+                            		font-size: 11px;
+                            		text-decoration: underline;
+                            		width: 100%;
+                            		margin-top: -4px;
+                            		background: rgba(0, 0, 0, .7);
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.todo1:hover {
+                            		font-size: 11px;
+                            		text-decoration: underline;
+                            		width: 100%;
+                            		margin-top: -4px;
+                            		background: rgba(70, 120, 250, 1);
+                            		color: #FFF;
+                            		cursor: pointer;
+                            	}
+
+                            	.tree1 ul {
+                            		padding-top: 20px;
+                            		position: relative;
+                            		transition: all 0.5s;
+                            		-webkit-transition: all 0.5s;
+                            		-moz-transition: all 0.5s;
+                            	}
+
+                            	.tree1 li {
+                            		float: left;
+                            		text-align: center;
+                            		list-style-type: none;
+                            		position: relative;
+                            		padding: 20px 5px 0 5px;
+                            		transition: all 0.5s;
+                            		-webkit-transition: all 0.5s;
+                            		-moz-transition: all 0.5s;
+                            	}
+
+                            	/*We will use ::before and ::after to draw the connectors*/
+                            	.tree1 li::before, .tree1 li::after {
+                            		content: '';
+                            		position: absolute;
+                            		top: 0;
+                            		right: 50%;
+                            		border-top: 3px solid #ccc;
+                            		width: 50%;
+                            		height: 20px;
+                            	}
+
+                            	.tree1 li::after {
+                            		right: auto;
+                            		left: 50%;
+                            		border-left: 3px solid #ccc;
+                            	}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree1 li:only-child::after, .tree1 li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree1 li:only-child {
+	padding-top: 0;
+}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree1 li:first-child::before, .tree1 li:last-child::after {
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree1 li:last-child::before {
+	border-right: 3px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+
+.tree1 li:first-child::after {
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree1 ul ul::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-left: 3px solid #ccc;
+	width: 0;
+	height: 20px;
+}
+
+.tree1 li a {
+	height: 100px;
+	width: 100px;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+	display: inline-block;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree1 li a:hover, .tree1 li a:hover+ul li a {
+	background: #c8e4f8;
+	color: #000;
+	border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree1 li a:hover+ul li::after, .tree1 li a:hover+ul li::before, .tree1 li a:hover+ul::before,
+.tree1 li a:hover+ul ul::before {
+	border-color: #94a0b4;
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+/*fin prueba*/
+/* fin estilos componente5*/
+
+@media (max-width: 1020px) {
+    #descripciones_economicas{
+        text-align: center;
+    }
+
+    #descripciones_economicas .descipcion_economica{
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #grafica_ganancias, #grafica_semanal{
+        margin: 20px 0;
+        margin-left: 20px;
+    }
+
+    .icon3 {
+        width: 45%;
+        margin: 5px 0px;
+    }
+
+    .contenedor_graficaedocuenta{
+        width: 60%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    #tabla_histbilletera{
+        padding-left: 40px;
+    }
+
+    .descripcion_producto .logo_producto img {
+        width: 30%;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+
+    /* #descripciones_economicas .descipcion_economica{
+        width: %;
+    } */
+
+    /* .icon3 {
+        width: 25%;
+        margin: 5px 0px;
+    } */
+
+    #opciones_pantalla {
+        width: 100%;
+    }
+
+    #titulo_pantalla {
+        display: none;
+    }
+    
+    #titulo_pantalla{
+        display: none;
+    }
+
+    #menu_burger1{
+        display: inline-block;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    #grafica_ganancias, #grafica_semanal {
+        margin: 20px 0;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #expande_menu{
+        display: none;
+    }
+
+    #menu_burger2{
+        display: block;
+        width: 18%;
+    }
+
+    .descripcion_producto {
+        width: 60%;
+        margin: 30px auto;
+    }
+
+
+
+}
+
+@media (max-width: 596px) {
+    #descripciones_economicas .descipcion_economica {
+        width: 98%;
+    }
+
+    .informacion_economica {
+        margin: 30px 0px;
+    }
+    
+}
+
+@media (max-width: 540px) {
+    
+    .contenedor_principal{
+        margin-top: 100px;
+    }
+    
+}
+</style>
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+
+
+        <div id="menu">
+            <div id="logo_menu">
+                <a href="/">
+                    <img src="<%= asset_path 'logo.png' %>" alt="Networksoft">
+                </a>
+            </div>
+            <ul id="opciones_menu">
+                <li  id="expande_menu" class="opcion_menu">
+                    <span class="icon_menu">
+                        <img class="icono_menu" src="<%= asset_path 'flechaderecha2.png' %>" data-txtImg="<%= asset_path 'flechaderecha.png' %>" data-txtImgs="<%= asset_path 'flechaderecha2.png' %>"  alt="icono_menu">
+                    </span>
+                </li>
+                <li  id="menu_burger2" class="opcion_menu">
+                    <span class="icon_menu">
+                        <img class="icono_menu" src="<%= asset_path 'menuburger2.png' %>" data-txtImg="<%= asset_path 'menuburger.png' %>" data-txtImgs="<%= asset_path 'menuburger2.png' %>" alt="icono_menu">
+                    </span>
+                </li>
+                <li class="opcion_menu">
+                    <span class="icon_menu">
+                        <img class="icono_menu" src="<%= asset_path 'perfilyred2.png' %>" data-txtImg="<%= asset_path 'perfilyred.png' %>" data-txtImgs="<%= asset_path 'perfilyred2.png' %>" alt="icono_menu">
+                    </span>
+                    <p class="text_menu">
+                        Perfil y Red
+                    </p>
+                    <ul class="subopciones_menu">
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'perfil2.png' %>" data-txtImg="<%= asset_path 'perfil.png' %>" data-txtImgs="<%= asset_path 'perfil2.png' %>" alt="icono submenu">
+                                </span>
+                                Perfil
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'foto2.png' %>" data-txtImg="<%= asset_path 'foto.png' %>" data-txtImgs="<%= asset_path 'foto2.png' %>" alt="icono submenu">
+                                </span>
+                                Foto
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'afiliar2.png' %>" data-txtImg="<%= asset_path 'afiliar.png' %>" data-txtImgs="<%= asset_path 'afiliar2.png' %>" alt="icono submenu">
+                                </span>
+                                Afiliar
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'red2.png' %>" data-txtImg="<%= asset_path 'red.png' %>" data-txtImgs="<%= asset_path 'red2.png' %>" alt="icono submenu">
+                                </span>
+                                Redes
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="opcion_menu">
+                    <span class="icon_menu">
+                        <img class="icono_menu" src="<%= asset_path 'comprasycomisiones2.png' %>" data-txtImg="<%= asset_path 'comprasycomisiones.png' %>" data-txtImgs="<%= asset_path 'comprasycomisiones2.png' %>" alt="icono_menu">
+                    </span>
+                    <p class="text_menu">
+                        Compras y Comisiones
+                    </p>
+                    <ul class="subopciones_menu">
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'carrito2.png' %>" data-txtImg="<%= asset_path 'carrito.png' %>" data-txtImgs="<%= asset_path 'carrito2.png' %>" alt="icono submenu">
+                                </span>
+                                Carrito
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'estadocuenta2.png' %>" data-txtImg="<%= asset_path 'estadocuenta.png' %>" data-txtImgs="<%= asset_path 'estadocuenta2.png' %>" alt="icono submenu">
+                                </span>
+                                Estado de cuenta
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'billetera2.png' %>" data-txtImg="<%= asset_path 'billetera.png' %>" data-txtImgs="<%= asset_path 'billetera2.png' %>" alt="icono submenu">
+                                </span>
+                                Billetera
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'reporte2.png' %>" data-txtImg="<%= asset_path 'reporte.png' %>" data-txtImgs="<%= asset_path 'reporte2.png' %>" alt="icono submenu">
+                                </span>
+                                Reportes
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="opcion_menu">
+                    <span class="icon_menu">
+                        <img class="icono_menu" src="<%= asset_path 'general2.png' %>" data-txtImg="<%= asset_path 'general.png' %>" data-txtImgs="<%= asset_path 'general2.png' %>" alt="icono_menu">
+                    </span>
+                    <p class="text_menu">
+                        General
+                    </p>
+                    <ul class="subopciones_menu">
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'encuesta2.png' %>" data-txtImg="<%= asset_path 'encuesta.png' %>" data-txtImgs="<%= asset_path 'encuesta2.png' %>" alt="icono submenu">
+                                </span>
+                                Encuestas
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'archivero2.png' %>" data-txtImg="<%= asset_path 'archivero.png' %>" data-txtImgs="<%= asset_path 'archivero2.png' %>" alt="icono submenu">
+                                </span>
+                                Archivero
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'tablero2.png' %>" data-txtImg="<%= asset_path 'tablero.png' %>" data-txtImgs="<%= asset_path 'tablero2.png' %>" alt="icono submenu">
+                                </span>
+                                Tablero
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'compartir2.png' %>" data-txtImg="<%= asset_path 'compartir.png' %>" data-txtImgs="<%= asset_path 'compartir2.png' %>" alt="icono submenu">
+                                </span>
+                                Compartir
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="opcion_menu">
+                    <span class="icon_menu">
+                        <img class="icono_menu" src="<%= asset_path 'comunicacion2.png' %>" data-txtImg="<%= asset_path 'comunicacion.png' %>" data-txtImgs="<%= asset_path 'comunicacion2.png' %>" alt="icono_menu">
+                    </span>
+                    <p class="text_menu">
+                        Comunicacion
+                    </p>
+                    <ul class="subopciones_menu">
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'webpersonal2.png' %>" data-txtImg="<%= asset_path 'webpersonal.png' %>" data-txtImgs="<%= asset_path 'webpersonal2.png' %>" alt="icono submenu">
+                                </span>
+                                WEB personal
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'chatred2.png' %>" data-txtImg="<%= asset_path 'chatred.png' %>" data-txtImgs="<%= asset_path 'chatred2.png' %>" alt="icono submenu">
+                                </span>
+                                Chat mi Red
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'email2.png' %>" data-txtImg="<%= asset_path 'email.png' %>" data-txtImgs="<%= asset_path 'email2.png' %>" alt="icono submenu">
+                                </span>
+                                Email
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'soportetecnico2.png' %>" data-txtImg="<%= asset_path 'soportetecnico.png' %>" data-txtImgs="<%= asset_path 'soportetecnico2.png' %>" alt="icono submenu">
+                                </span>
+                                Soporte tecnico
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'sugerencia2.png' %>" data-txtImg="<%= asset_path 'sugerencia.png' %>" data-txtImgs="<%= asset_path 'sugerencia2.png' %>" alt="icono submenu">
+                                </span>
+                                Sugerencias
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="opcion_final" class="opcion_menu">
+                    <span class="icon_menu">
+                        <img class="icono_menu" src="<%= asset_path 'informacionycapacitacion2.png' %>" data-txtImg="<%= asset_path 'informacionycapacitacion.png' %>" data-txtImgs="<%= asset_path 'informacionycapacitacion2.png' %>" alt="icono_menu">
+                    </span>
+                    <p class="text_menu">
+                        Informacion y Capacitacion
+                    </p>
+                    <ul class="subopciones_menu">
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'informacion2.png' %>" data-txtImg="<%= asset_path 'informacion.png' %>" data-txtImgs="<%= asset_path 'informacion2.png' %>" alt="icono submenu">
+                                </span>
+                                Informacion
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'presentacion2.png' %>" data-txtImg="<%= asset_path 'presentacion.png' %>" data-txtImgs="<%= asset_path 'presentacion2.png' %>" alt="icono submenu">
+                                </span>
+                                presentaciones
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'ebook2.png' %>" data-txtImg="<%= asset_path 'ebook.png' %>" data-txtImgs="<%= asset_path 'ebook2.png' %>" alt="icono submenu">
+                                </span>
+                                E-books
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'descarga2.png' %>" data-txtImg="<%= asset_path 'descarga.png' %>" data-txtImgs="<%= asset_path 'descarga2.png' %>" alt="icono submenu">
+                                </span>
+                                Descargas
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'bono2.png' %>" data-txtImg="<%= asset_path 'bono.png' %>" data-txtImgs="<%= asset_path 'bono2.png' %>" alt="icono submenu">
+                                </span>
+                                Bonos
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'evento2.png' %>" data-txtImg="<%= asset_path 'evento.png' %>" data-txtImgs="<%= asset_path 'evento2.png' %>" alt="icono submenu">
+                                </span>
+                                Eventos
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'noticias2.png' %>" data-txtImg="<%= asset_path 'noticias.png' %>" data-txtImgs="<%= asset_path 'noticias2.png' %>" alt="icono submenu">
+                                </span>
+                                Noticias
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'video2.png' %>" data-txtImg="v<%= asset_path 'video.png' %>" data-txtImgs="<%= asset_path 'video2.png' %>" alt="icono submenu">
+                                </span>
+                                Videos
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'reconocimiento2.png' %>" data-txtImg="<%= asset_path 'reconocimiento.png' %>" data-txtImgs="<%= asset_path 'reconocimiento2.png' %>" alt="icono submenu">
+                                </span>
+                                Resconocimientos
+                            </a>
+                        </li>
+                        <li class="subopcion_menu">
+                            <a href="/">
+                                <span class="icon_submenu">
+                                    <img class="icono_submenu" src="<%= asset_path 'estadistica2.png' %>" data-txtImg="<%= asset_path 'estadistica.png' %>" data-txtImgs="<%= asset_path 'estadistica2.png' %>" alt="icono submenu">
+                                </span>
+                                Estadisticas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="loggout"><p>cerrar session</p></div>
+        </div>
+        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+        <div id="pantalla" class="col-xs-12 col-sm-11 col-md-11 col-lg-11 principal">
+            <div id="encabezado_pantalla">
+                <div id="titulo_pantalla">
+                    <p>Inicio</p>
+                </div>
+                <div id="opciones_pantalla">
+                    <div id="menu_burger1">
+                        <img src="<%= asset_path 'menuburger.png' %>" alt="">
+                    </div>
+                    <div id="busqueda_pantalla" class="opcion_pantalla">
+                        <div id="texto_busqueda">
+                            <input type="text">
+                        </div>
+                        <div id="icono_busqueda">
+                            <span>
+                                <img class="icon1" src="<%= asset_path 'search.png' %>" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div id="mensajero_pantalla" class="opcion_pantalla">
+                        <span>
+                            <a href="/">
+                                <img class="icon1" src="<%= asset_path 'message-closed-envelope.png' %>" alt="">
+                            </a>
+                        </span>
+                    </div>
+                    <div id="campana_pantalla" class="opcion_pantalla">
+                        <span>
+                            <a href="/">
+                                <img class="icon1" src="<%= asset_path 'alarm.png' %>" alt="">
+                            </a>
+                        </span>
+                    </div>
+                    <div id="usuario_pantalla" class="opcion_pantalla">
+                        <span>
+                            <a href="/">
+                                <img class="icon2" src="<%= asset_path 'user.png' %>" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="dashboard" class="col-sm-12 contenedor_principal">
+                <div id="descripciones_economicas">
+                    <div id="ganancias_totales" class="descipcion_economica color_verde">
+                        <div class="icon_descripcion col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                            <span>
+                                <img src="<%= asset_path 'dollar.png' %>" class="icon3" alt="">
+                            </span>
+                        </div>
+                        <div class="informacion_economica col-xs-7 col-sm-7 col-md-9 col-lg-9">
+                            <div class="cantidad_texto">
+                                <p>
+                                    17212
+                                </p>
+                            </div>
+                            <div class="texto_economica">
+                                <p>
+                                    total earings
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="visitantes_hoy" class="descipcion_economica color_azul">
+                        <div class="icon_descripcion col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                            <span>
+                                <img src="<%= asset_path 'pulse-line.png' %>" class="icon3" alt="">
+                            </span>
+                        </div>
+                        <div class="informacion_economica col-xs-7 col-sm-7 col-md-9 col-lg-9">
+                            <div class="cantidad_texto">
+                                <p>
+                                    17212
+                                </p>
+                            </div>
+                            <div class="texto_economica">
+                                <p>visitors today</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ventas_hoy" class="descipcion_economica color_amarillo">
+                        <div class="icon_descripcion col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                            <span>
+                                <img src="<%= asset_path 'cart.png' %>" class="icon3" alt="">
+                            </span>
+                        </div>
+                        <div class="informacion_economica col-xs-7 col-sm-7 col-md-9 col-lg-9">
+                            <div class="cantidad_texto">
+                                <p>
+                                    2525
+                                </p>
+                            </div>
+                            <div class="texto_economica">
+                                <p>Sales today</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ingresos_totales" class="descipcion_economica color_verde">
+                        <div class="icon_descripcion col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                            <span>
+                                <img src="<%= asset_path 'dollar.png' %>" class="icon3" alt="">
+                            </span>
+                        </div>
+                        <div class="informacion_economica col-xs-7 col-sm-7 col-md-9 col-lg-9">
+                            <div class="cantidad_texto">
+                                <p>
+                                    $18700
+                                </p>
+                            </div>
+                            <div class="texto_economica">
+                                <p>Total revenue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row graficas_dashboard">
+            
+                    <div id="grafica_ganancias" class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                        <div class="titulos_graficas color_azul">
+                            <p>Total Revenue</p>
+                        </div>    
+                        <!-- <div id="myfirstchart" style="height: 250px;"></div> -->
+                        <div class="cuerpo_graficas">
+                            <canvas id="graficaganancias"></canvas>
+                        </div>
+                    </div>
+                    <div id="grafica_semanal" class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                        <!-- <img src="<%= asset_path 'semanal2.png' %>" alt=""> -->
+                        <!-- <div id="contenedor_grafsemanal"> -->
+                        <div class="titulos_graficas color_azul">
+                            <p>weekly sales</p>
+                        </div> 
+                        <div class="cuerpo_graficas">
+                            <canvas id="graficasemanal"></canvas>
+                        </div>   
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div><canvas id="myChart"></canvas></div> -->
+            <div></div>
+        </div>
+
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+    $('.subopciones_menu').hide();
+    var espacio 		=  $('#menu').offset().top;
+    var alto 			= $(window).height();
+    var medida_grid		= (alto - espacio);
+    $('#contenedor_dashboard').css({'max-height':medida_grid,'min-height':medida_grid});
+    $('#menu').css({'height':medida_grid});
+    $('#pantalla').css({'height':medida_grid});
+
+    $('#historial_cuenta').hide();
+    $('#historial_billetera').hide();
+    $('.text_menu').hide();
+
+    var flechas = {
+        flechaderecha : '/imagenes/flechaderecha.png',
+        flechaizquierda : '/imagenes/flechaizquierda.png'
+    };
+    // new Morris.Line({
+    //     // ID of the element in which to draw the chart.
+    //     element: 'myfirstchart',
+    //     // Chart data records -- each entry in this array corresponds to a point on
+    //     // the chart.
+    //     data: [
+    //         { year: '2008', value: 20, cantidad: 0 },
+    //         { year: '2009', value: 10, cantidad: 10},
+    //         { year: '2010', value: 5,  cantidad: 20},
+    //         { year: '2011', value: 2.3, cantidad: 30},
+    //         { year: '2012', value: 20, cantidad: 40}
+    //     ],
+    //     // The name of the data record attribute that contains x-values.
+    //     xkey: 'year',
+    //     // A list of names of data record attributes that contain y-values.
+    //     ykeys: ['value'],
+    //     // Labels for the ykeys -- will be displayed when you hover over the
+    //     // chart.
+    //     labels: ['cantidad']
+    // });
+    
+    $('.subopciones_menu').hide();
+    // $('#putisima_madre').hide();
+
+
+    //mostrar submenu
+    $(document).on('mouseover','.opcion_menu',function(){
+        var rutaimg = $(this).children('.icon_menu').children('.icono_menu').attr('data-txtImg');
+        //$(this).children('.icon_menu').children('.icono_menu').attr('data-txtImg',rutaimg.replace('.','2.'));
+        //console.log(rutaimg);
+        //console.log($(this).children('.icon_menu').children('.icono_menu').attr('data-txtImg',rutaimg.replace('.','2.')));
+        //var algo = "<%= asset_path 'semanal2.png' %>";
+        $(this).children('.icon_menu').children('.icono_menu').attr('src',rutaimg);
+        var topSubmenus = '-80px';
+
+        if($(this).attr('id') == 'opcion_final')
+            topSubmenus = '-205px';
+
+        $(this).children('.subopciones_menu').show();
+        var widthOpcionMenu = "" + $(this).width() + "px";
+        var heightWindow = $(window).height();
+        var heightSubMenu = $(this).children('.subopciones_menu').height();
+        //var posicionSubMenu = $(this).children('.subopciones_menu').offset().top;
+
+        $(this).children('.subopciones_menu').css({'margin-top': topSubmenus});
+        $(this).children('.subopciones_menu').css({'margin-left':widthOpcionMenu});
+    });
+
+    //ocultar submenu
+    $(document).on('mouseout','.opcion_menu',function(){
+        var rutaimg = $(this).children('.icon_menu').children('.icono_menu').attr('data-txtImgs');
+        //var rutaimg = $(this).children('.icon_menu').children('.icono_menu').attr('src').replace('.','2.');
+        $(this).children('.icon_menu').children('.icono_menu').attr('src',rutaimg);
+        $('.subopciones_menu').hide();
+    });
+
+    $(document).on('mouseover','.subopcion_menu',function(){
+        var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('txtImg');
+        //var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src').replace(2,'');
+        $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src',rutaimg);
+    });
+
+    $(document).on('mouseout','.subopcion_menu',function(){
+        var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('txtImgs');
+        //var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src').replace('.','2.');
+        $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src',rutaimg);
+    });
+
+    $(document).on('click','#estadocuenta', function(){
+        $('#estado_cuenta').show();
+        $('#tabla_secundaria').show();
+        $('#historial_cuenta').hide();
+    });
+
+    $(document).on('click','#historialcuenta', function(){
+        $('#historial_cuenta').show();
+        $('#estado_cuenta').hide();
+        $('#tabla_secundaria').hide();
+    });
+
+    $(document).on('click','#pedirdinero', function(){
+        $('#contenedor_pedirdinero').show();
+        $('#historial_billetera').hide();
+    });
+
+    $(document).on('click','#historialbilletera', function(){
+        $('#historial_billetera').show();
+        $('#contenedor_pedirdinero').hide();
+    });
+
+    $(document).on('click', '#expande_menu', function(){
+        if($('.text_menu').is(':visible')){
+            $('#menu').css({
+                    'width': '106px',
+                    'text-align': 'center',
+                }
+            );
+            $('.text_menu').hide();
+            //$('.text_menu').css({'display': 'inline-block'});
+            $('.opcion_menu').css({'padding-left': '0px'});
+            $(this).children().children().prop('src', flechas.flechaderecha);
+            $(this).css({'text-align': 'center'});
+
+
+        }else{
+            $('#menu').css({
+                    'width': '300px',
+                    'text-align': 'initial',
+                }
+            );
+            $('.text_menu').show();
+            $('.text_menu').css({'display': 'inline-block'});
+            $('.opcion_menu').css({'padding-left': '10px'});
+            $(this).children().children().prop('src', flechas.flechaizquierda);
+            $(this).css({'text-align': 'right'});
+        }
+
+        // $(this).children().children().prop('src') != flechas.flechaderecha ? $(this).children().children().prop('src', flechas.flechaizquierda): $(this).children().children().prop('src', flechas.flechaderecha);
+    });
+
+    $(document).on('click', '#menu_burger1', function(){
+            //$('#menu').slideToggle( "fast", function() {
+            $('#menu').css({
+                    'width': '300px',
+                    'text-align': 'initial',
+                }
+            );
+            $('.text_menu').show();
+            $('.text_menu').css({'display': 'inline-block'});
+            $('.opcion_menu').css({'padding-left': '10px'});
+            $('#menu').show();
+            //$(this).children().children().prop('src', flechas.flechaizquierda);
+            //$(this).css({'text-align': 'right'});
+          //});
+    });
+
+    $(document).on('click', '#menu_burger2', function(){
+        $('#menu').hide();
+        $('.text_menu').hide();
+        $('#menu').attr('style','');
+        $('.text_menu').attr('style','');
+        $('.opcion_menu').attr('style','');
+    });
+
+
+    // var canvas = document.getElementById('graficaedocuenta');
+    // if (canvas && canvas.getContext) {
+    //     var ctx = canvas.getContext('2d');
+    //     if (ctx) {
+    //         // var oData = {
+    //         // 'IE': '10.2',
+    //         // 'Firefox': '26.9',
+    //         // 'Chrome': '55.7',
+    //         // 'Safari': '3.9',
+    //         // 'Opera': '1.8'
+    //         // };
+    //         // var oColores = {
+    //         // 'IE': '#6495ED',
+    //         // 'Firefox': '#FF8C00',
+    //         // 'Chrome': '#FFD700',
+    //         // 'Safari': '#32CD32',
+    //         // 'Opera': '#DC143C',
+    //         // 'otros': '#ddd'
+    //         // };
+    //         // el radio del gráfico;					
+    //         var r = 100;
+    //         // las coordenadas del centro del canvas
+    //         var X = canvas.width / 2
+    //         var Y = canvas.height / 2;
+    //         // dibuja un circulo gris en el centro del canvas
+    //         ctx.fillStyle = '#ddd';
+    //         ctx.moveTo(X, Y);
+    //         ctx.arc(X, Y, r, 0, 2 * Math.PI);
+    //         ctx.fill();
+    //         // dibuja un sector circular		
+    //         var ap = 0;
+    //         var af = (2 * Math.PI / 100) * 75.0;
+    //         var Xap = X + r * Math.cos(ap);
+    //         var Yap = Y + r * Math.sin(ap);
+
+    //         ctx.beginPath();
+    //         ctx.fillStyle = '#6495ED';
+    //         ctx.moveTo(X, Y);
+    //         ctx.lineTo(Xap, Yap);
+    //         ctx.arc(X, Y, r, ap, af);
+    //         ctx.closePath();
+    //         ctx.fill();
+            
+            
+    //     }
+    // }
+
+//         var ctx3 = document.getElementById('myChart').getContext('2d');
+    // var chart = new Chart(ctx3, {
+    //     type: 'bar',
+    //     data: {
+    //         labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    //         datasets: [{
+    //             label: 'Ingresos',
+    //             backgroundColor: '#42a5f5',
+    //             borderColor: 'gray',
+    //             data: [7, 8, 5, 2, 8, 10, 7,-7,4,9,-8,5]
+    //         },{
+    //             label: 'Gastos',
+    //             backgroundColor: '#ffab91',
+    //             borderColor: 'yellow',
+    //             data: [5, -8, 10, 3,-7,6,8,-2,-6,9,-7,2]
+    //         }		
+    // 		]},
+    //     options: {responsive: true}
+    // });
+
+    // var canvas = document.getElementById('lienzo');
+    //     if (canvas && canvas.getContext) {
+    //         var ctx = canvas.getContext('2d');
+    //         if (ctx) {
+    //             var oData = {
+    //             'IE': '10.2',
+    //             'Firefox': '26.9',
+    //             'Chrome': '55.7',
+    //             'Safari': '3.9',
+    //             'Opera': '1.8'
+    //             };
+    //             var oColores = {
+    //             'IE': '#6495ED',
+    //             'Firefox': '#FF8C00',
+    //             'Chrome': '#FFD700',
+    //             'Safari': '#32CD32',
+    //             'Opera': '#DC143C',
+    //             'otros': '#ddd'
+    //             };
+    //             // el radio del gráfico;					
+    //             var r = 100;
+    //             // las coordenadas del centro del canvas
+    //             var X = canvas.width / 2
+    //             var Y = canvas.height / 2;
+    //             // dibuja un circulo gris en el centro del canvas
+    //             ctx.fillStyle = '#ddd';
+    //             ctx.moveTo(X, Y);
+    //             ctx.arc(X, Y, r, 0, 2 * Math.PI);
+    //             ctx.fill();
+    //             // dibuja un sector circular		
+    //             var ap = 0;
+    //             var af = (2 * Math.PI / 100) * oData.IE;
+    //             var Xap = X + r * Math.cos(ap);
+    //             var Yap = Y + r * Math.sin(ap);
+
+    //             ctx.beginPath();
+    //             ctx.fillStyle = oColores.IE;
+    //             ctx.moveTo(X, Y);
+    //             ctx.lineTo(Xap, Yap);
+    //             ctx.arc(X, Y, r, ap, af);
+    //             ctx.closePath();
+    //             ctx.fill();
+                
+                
+    //         }
+    //     }
+    // if(typeof document.getElementById('graficaganancias') != 'undefined'){
+    //     var ctx1 = document.getElementById('graficaganancias').getContext('2d');
+    //     var chart = new Chart(ctx1, {
+    //         type: 'line',
+    //         data: {
+    //             labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    //             datasets: [{
+    //                 label: 'Ganancias',
+    //                 // backgroundColor: '#42a5f5',
+    //                 borderColor: 'gray',
+    //                 data: [7, 8, 5, 2, 8, 10, 7,7,4,9,8,5]
+    //             }		
+    //             ]},
+    //         options: {}
+    //     });
+    // }
+
+    // if(typeof document.getElementById('graficasemanal') != 'undefined'){
+    //     var ctx2 = document.getElementById('graficasemanal').getContext('2d');
+    //     var chart = new Chart(ctx2, {
+    //         type: 'pie',
+    //         data: 	
+    //         {
+    //                     datasets: [{
+    //                         data: [60,18,10, 8, 4],
+    //                         backgroundColor: ['#42a5f5', 'red', 'green','blue','violet'],
+    //                         label: 'Comparacion de navegadores'
+    //                     }],
+    //                     labels: [
+    //                         'Google Chrome',
+    //                         'Safari',
+    //                         'Edge',
+    //                         'Firefox',
+    //                         'Opera'
+    //                     ]},
+    //         options: {}
+    //     });
+    // }
+
+    // if(typeof document.getElementById('graficaedocuenta') != 'undefined'){
+    //     var ctx3 = document.getElementById('graficaedocuenta').getContext('2d');
+    //     var chart = new Chart(ctx3, {
+    //         type: 'pie',
+    //         data: 	
+    //         {
+    //             datasets: [{
+    //                 data: [60,40,],
+    //                 backgroundColor: ['#6495ED','grey'],
+    //                 label: 'Comparacion de navegadores'
+    //             }],
+    //             labels: [
+    //                 'inversion',
+    //                 'faltante'
+    //             ]
+    //         },
+    //         options: {}
+    //     });
+    // }
+
+
+
+    //muestra_arbol();
+});
+
+
+
+function muestra_arbol() {
+    $.ajax({
+        type: "get",
+        url: "red2/red_arbol1",
+        success:function(msg){
+            $('#prueba_arbol').html(msg);
+        }
+    });
+}
+
+function detalles(id)
+{
+	$.ajax({
+		type: "POST",
+		url: "/ov/perfil_red/detalle_usuario",
+		data: {id: id},
+	})
+	.done(function( msg )
+	{
+		bootbox.dialog({
+			message: msg,
+			title: "Información Personal",
+			buttons: {
+				success: {
+					label: "Cerrar!",
+					className: "btn-success",
+					callback: function() {
+					//location.href="";
+					}
+				}
+			}
+		});
+	});
+}
+
+function subred(id, profundidad)
+{
+    debugger;
+	$("#"+id).children(".quitar").attr('onclick','');
+
+	$.ajax({
+		type: "POST",
+		url: "/ov/perfil_red/get_red_ver",
+		data: {
+			id: id,
+			red: 1,
+			profundidad: profundidad
+		},
+	})
+	.done(function( msg )
+	{
+		$("#"+id).append(msg);
+        $("#"+id).attr("onclick","");
+	});
+}
+
+
+
+//    <h4>Estadísticas de uso de navegadores<br>
+// <small>( para el mes de enero del año 2014 )</small></h4>
+// <canvas id="lienzo" width="400" height="300">Su navegador no soporta canvas :( </canvas>
+// <script>
+// var canvas = document.getElementById('lienzo');
+// if (canvas && canvas.getContext) {
+//   var ctx = canvas.getContext('2d');
+//   if (ctx) {
+//     var oData = {
+//       'IE': '10.2',
+//       'Firefox': '26.9',
+//       'Chrome': '55.7',
+//       'Safari': '3.9',
+//       'Opera': '1.8'
+//     };
+//     var oColores = {
+//       'IE': '#6495ED',
+//       'Firefox': '#FF8C00',
+//       'Chrome': '#FFD700',
+//       'Safari': '#32CD32',
+//       'Opera': '#DC143C',
+//       'otros': '#ddd'
+//     };
+//     // el radio del gráfico;					
+//     var r = 100;
+//     // las coordenadas del centro del canvas
+//     var X = canvas.width / 2
+//     var Y = canvas.height / 2;
+//     // dibuja un circulo gris en el centro del canvas
+//     ctx.fillStyle = '#ddd';
+//     ctx.moveTo(X, Y);
+//     ctx.arc(X, Y, r, 0, 2 * Math.PI);
+//     ctx.fill();
+//     // dibuja un sector circular		
+//     var ap = 0;
+//     var af = (2 * Math.PI / 100) * oData.Chrome;
+//     var Xap = X + r * Math.cos(ap);
+//     var Yap = Y + r * Math.sin(ap);
+
+//     ctx.beginPath();
+//     ctx.fillStyle = oColores.Chrome;
+//     ctx.moveTo(X, Y);
+//     ctx.lineTo(Xap, Yap);
+//     ctx.arc(X, Y, r, ap, af);
+//     ctx.closePath();
+//     ctx.fill();
+    
+    
+//   }
+// }
+// </script> 
+ 
+</script>
+<script>
+$(document).ready(function(){
+    if(typeof document.getElementById('graficaganancias') != 'undefined'){
+        var ctx1 = document.getElementById('graficaganancias').getContext('2d');
+        var chart = new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    borderWidth: 0,
+                    data: [60,40],
+                    backgroundColor: ['#42a5f5'],
+                    label: 'Comparacion de navegadores'
+                }],
+                labels: [
+                    'Avance'
+                ]
+                // number: [100],
+                // labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                // datasets: [{
+                //     label: 'Ganancias',
+                //     //backgroundColor: '##42a5f5',
+                //     borderColor: 'gray',
+                //     data: [7, 8, 5, 2, 8, 10, 7,7,4,9,8,5]
+                // }		
+                // ]
+            },
+            options: {}
+        });
+    }
+
+    if(typeof document.getElementById('graficasemanal') != 'undefined'){
+        var ctx2 = document.getElementById('graficasemanal').getContext('2d');
+        var chart = new Chart(ctx2, {
+            type: 'pie',
+            data: 	
+            {
+                datasets: [{
+                    data: [60,18,10, 12],
+                    backgroundColor: ['#42a5f5', 'red', 'green','blue'],
+                    label: 'Comparacion de navegadores'
+                }],
+                labels: [
+                    'Direct',
+                    'Afiliate',
+                    'E-mail',
+                    'Other'
+                ]
+            },
+            options: {}
+        });
+    }
+
+});
+</script>
