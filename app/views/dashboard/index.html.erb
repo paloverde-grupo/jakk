@@ -1342,13 +1342,14 @@ $(document).ready(function(){
     });
 
     $(document).on('mouseover','.subopcion_menu',function(){
-        var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('txtImg');
+        var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('data-txtImg');
+        console.log(rutaimg);
         //var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src').replace(2,'');
         $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src',rutaimg);
     });
 
     $(document).on('mouseout','.subopcion_menu',function(){
-        var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('txtImgs');
+        var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('data-txtImgs');
         //var rutaimg = $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src').replace('.','2.');
         $(this).children('a').children('.icon_submenu').children('.icono_submenu').attr('src',rutaimg);
     });
