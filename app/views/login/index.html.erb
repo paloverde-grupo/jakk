@@ -1,54 +1,109 @@
-<div id="main" role="main" class="fondo">
+<style>
 
-            <!-- MAIN CONTENT -->
-            <div id="content" class="container">
+    .contendor_campo_login{
+        margin-bottom: 50px;
+    }
 
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hidden-xs hidden-sm">
-                    <!--  	<img src="/template/img/login.jpg" class="img2" alt="" >-->
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="hidden-xs header2">
-                                <!-- <img id="compania" src="/logo.png" alt=""> -->
+    .login_panel{
+        background-image: url(/assets/fondologin.png);
+        background-repeat:no-repeat;
+        background-position:center;
+        padding-top: 130px;
+        /* background-size: 100% 100%; */
+        /* background-size: cover; */
+        /* background-size:contain; */
+    }
+    
+    .icon_login{
+        width: 25px;
+        height: 25px;
+    }
+
+    .campo_login{
+        padding: 20px 12px;
+    }
+
+    .datos_login{
+        padding: 30px 20px;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .contendor_btn_login{
+        text-align: center;
+    }
+
+    .contendor_opciones_login{
+        margin-top: 50px;
+    }
+
+    .btn_login{
+        font-size: 30px;
+    }
+
+    .opcion_registro a{
+        cursor: pointer;
+        color: #162e52;
+    }
+
+    .opcion_registro a:hover{
+        color: #000000;
+        text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+        .datos_login{
+            width: 60%;
+        }
+    }
+
+</style>
+<div class="login_container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="login_panel">
+                <div class="datos_login">
+                    <div class="form-group contendor_campo_login">
+                        <label class="sr-only" for="exampleInputAmount">Usuario</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><img class="icon_login" src="<%= asset_path 'user.png' %>" alt=""></div>
+                                <input type="text" class="form-control campo_login" id="nicklogin" placeholder="Usuario">
                         </div>
-                        <div class="form_login well no-padding">
-                            <form id="login-form" method="POST" action="/auth/login" class="smart-form client-form">
-                                <header>
-                                    <h2>Iniciar sesión</h2>
-                                </header>
-                                <fieldset>
-                                    <!-- <div class="hidden-xs hidden-md hidden-sm col-lg-6">
-                                             <img src="/template/img/empresario.jpg" alt="Empresario">
-                                    </div>-->
-                                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                                        <section>
-                                            <label class="label">Cuenta</label>
-                                            <label class="input"> <i class="icon-append fa fa-user"></i>
-                                                <input required type="text" placeholder="" name="login">
-                                                <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Ingrese su id, usuario o correo</b></label>
-                                        </section>
-
-                                        <section>
-                                            <label class="label">Contraseña</label>
-                                            <label class="input"> <i class="icon-append fa fa-lock"></i>
-                                                <input required type="password" placeholder="" name="password">
-                                                <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Ingrese la contraseña</b> </label>
-                                            <div class="note">
-                                                <a class="link_login" href="/auth/forgot_password">Olvidaste tu contraseña?</a>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </fieldset>
-                                <footer>
-                                    <button id="enviar" type="submit" class="btn btn-primary btn-block">
-                                        Ingresar
-                                    </button>
-                                </footer>
-                            </form>
-
+                    </div>
+                    <div class="form-group contendor_campo_login">
+                        <label class="sr-only" for="exampleInputAmount">Contraseña</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><img class="icon_login" src="<%= asset_path 'lock.png' %>" alt=""></div>
+                                <input type="password" class="form-control campo_login" id="passlogin" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="form-group contendor_btn_login">
+                        <button class="btn btn-primary btn_login"><span class="glyphicon glyphicon-log-in"></span></button>
+                    </div>
+                    <div class="form-group contendor_opciones_login">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 opcion_registro btn btn-default">
+                                <a href="#">Recuperar Contraseña</a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 opcion_registro btn btn-default">
+                                <a href="#">Registrarse</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+    var espacio 		=  $('.login_container').offset().top;
+    var alto 			= $(window).height();
+    var medida_grid		= (alto - espacio);
+    console.log(espacio);
+    console.log(alto);
+    console.log(medida_grid);
+    $('.login_panel').css({'max-height':medida_grid,'min-height':medida_grid});
+
+});
+</script>
